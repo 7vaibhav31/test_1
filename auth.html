@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatty - Join the Conversation</title>
+    <link rel="stylesheet" href="../css/auth.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <a href="../templates/index.html" class="logo">Chatty</a>
+    <div class="nav-links">
+        <a href="../templates/index.html">Home</a>
+        <a href="#" id="aboutLink">About</a>
+        <a href="#" id="featuresLink">Features</a>
+        <a href="#" id="contactLink">Contact</a>
+    </div>
+    <!-- About Modal -->
+<div class="modal" id="aboutModal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>About Chatty</h2>
+        <p>Chatty is a real-time global chat platform connecting people worldwide with secure, instant messaging.</p>
+    </div>
+</div>
+
+<!-- Features Modal -->
+<div class="modal" id="featuresModal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Chatty Features</h2>
+        <ul>
+            <li>🌐 Global real-time chat</li>
+            <li>🔒 Secure authentication</li>
+            <li>💬 Instant messaging</li>
+            <li>📱 Responsive design</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Contact Modal -->
+<div class="modal" id="contactModal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Contact Us</h2>
+        <p>Email: contact@chatty.com</p>
+    </div>
+</div>
+    <!-- Auth Container -->
+    <main class="auth-container">
+        <div class="auth-wrapper">
+            <!-- Toggle Between Login/Register -->
+            <div class="auth-toggle">
+                <button class="toggle-btn active" id="loginToggle">Login</button>
+                <button class="toggle-btn" id="registerToggle">Register</button>
+            </div>
+
+            <!-- Login Form -->
+            <form class="auth-form active" id="loginForm">
+                <h2>Welcome Back!</h2>
+                <div class="form-group">
+                    <label for="loginEmail">Email</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" id="loginEmail" placeholder="Enter your email" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="loginPassword" placeholder="Enter your password" required>
+                        <button type="button" class="toggle-password" aria-label="Show password">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                    <a href="#forgot-password" class="forgot-password">Forgot password?</a>
+                </div>
+                <button type="submit" class="auth-btn">Login</button>
+                <div class="auth-divider">
+                    <span>or</span>
+                </div>
+                <button type="button" class="auth-google">
+                    <img src="../images/google-icon.svg" alt="Google"> Continue with Google
+                </button>
+            </form>
+
+            <!-- Registration Form -->
+            <form class="auth-form" id="registerForm">
+                <h2>Create Account</h2>
+                <div class="form-group">
+                    <label for="registerName">Full Name</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-user"></i>
+                        <input type="text" id="registerName" placeholder="Enter your full name" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="registerEmail">Email</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" id="registerEmail" placeholder="Enter your email" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="registerPassword">Password</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="registerPassword" placeholder="Create a password" required>
+                        <button type="button" class="toggle-password" aria-label="Show password">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                    <div class="password-strength">
+                        <div class="strength-meter">
+                            <span class="strength-bar"></span>
+                            <span class="strength-bar"></span>
+                            <span class="strength-bar"></span>
+                            <span class="strength-bar"></span>
+                        </div>
+                        <div class="strength-text"></div>
+                        <ul class="password-rules">
+                            <li data-rule="length">At least 8 characters</li>
+                            <li data-rule="uppercase">Contains uppercase</li>
+                            <li data-rule="number">Contains number</li>
+                            <li data-rule="special">Contains special character</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="registerConfirm">Confirm Password</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="registerConfirm" placeholder="Confirm your password" required>
+                    </div>
+                </div>
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="agreeTerms" required>
+                    <label for="agreeTerms">I agree to the <a href="#terms">Terms of Service</a> and <a href="#privacy">Privacy Policy</a></label>
+                </div>
+                <button type="submit" class="auth-btn">Register</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- JavaScript -->
+    <script src="../js/auth.js"></script>
+</body>
+</html>

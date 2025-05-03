@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatty - Connect with People</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Chatty</a>
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#about">About</a>
+                <a href="#features">Features</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Feature Modal -->
+<div class="modal" id="featuresModal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Chatty Features</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🌐</div>
+                <h3>Global Chat Room</h3>
+                <p>Connect with people worldwide in our real-time global chat room.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔒</div>
+                <h3>Secure Authentication</h3>
+                <p>Email verification and encrypted passwords keep your account safe.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">💬</div>
+                <h3>Real-Time Messaging</h3>
+                <p>Messages appear instantly with our WebSocket technology.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🎨</div>
+                <h3>Custom Profiles</h3>
+                <p>Personalize your profile with images and descriptions.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- About Modal -->
+<div class="modal" id="aboutModal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>About Chatty</h2>
+        <p class="about-text">
+            Chatty is a modern web-based global chat platform where users from around the world can connect in real time.
+            Our mission is to create a space where people can communicate freely while maintaining privacy and security.
+        </p>
+        <div class="tech-stack">
+            <h3>Built With:</h3>
+            <div class="tech-icons">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+                <span>Django</span>
+                <span>PostgreSQL</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Contact Modal -->
+<div class="modal" id="contactModal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Contact Us</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</div>
+
+    <!-- Main Hero Section -->
+    <main class="landing">
+        <div class="logo-container">
+            <h1 class="neon-logo">Chatty</h1>
+            <p class="tagline">Connect, talk, and share in real-time globally</p>
+            <a href="auth.html" class="start-button">Let's Start</a>
+        </div>
+    </main>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2>What is Chatty?</h2>
+            <p>
+                Chatty is a modern web-based global chat platform where users from around the world can connect in real time.
+                Whether you're making new friends, collaborating on ideas, or just looking to hang out – Chatty offers a seamless and secure chatting experience.
+            </p>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2>Features</h2>
+            <ul>
+                <li>🌐 Global Chat Room</li>
+                <li>🧠 Real-Time Communication</li>
+                <li>🔐 Secure User Login</li>
+                <li>💬 Modern & Minimal UI</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Developed with ❤️ by [Your Name]</p>
+            <p>© 2025 Chatty Platform. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
